@@ -1,0 +1,113 @@
+<!DOCTYPE html>  
+<html>  
+    <head>  
+        <meta charset="UTF-8" />
+        <title>실습 문서</title>
+    </head>
+
+    <body>
+        <form>
+            <table border="1">
+                <tr>
+                    <th>도서명</th>
+                    <td colspan="3">
+                            <label for = "BookName"></label>
+                            <input type ="text" id ="BookName" name = "BookName" value="웹 2.0을 이끄는 방탄웹" />
+                    </td>
+                </tr>
+                <tr>
+                    <th>출판사명</th>
+                    <td colspan="3">
+                            <label for = "PublisherName"></label>
+                            <input type ="text" id ="PublisherName" name = "PublisherName" value="Manning" />
+                    </td>
+                </tr>
+                <tr>
+                    <th>발행연도</th>
+                    <td>
+                        <label for="year"></label>
+                        <select id="year" name="year">
+                            <option value="2025">2025</option>
+                            <option value="2024">2024</option>
+                            <option value="2023">2023</option>
+                        </select>
+                    </td>
+                    <th>저자암호</th>
+                    <td>
+                        <input type="password" id="password" name="password" value="******" />              
+                    </td>
+                </tr>
+                <tr>
+                    <th>도서이미지</th>
+                    <td colspan="3">
+                        <div align="right">
+                        <label for="fileUpload"></label>
+                        <input type="file" id="fileUpload" name="myFile" />
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th>관련단어검색</th>
+                    <td colspan="3">
+                        <label>
+                            <input type="checkbox" name="웹표준" value="웹표준" />
+                            웹표준
+                            <input type="checkbox" name="에이작스" value="에이작스" />
+                            에이작스
+                            <input type="checkbox" name="자바스크립트" value="자바스크립트" />
+                            자바스크립트
+                            <input type="checkbox" name="HTML" value="HTML" />
+                            HTML
+                            <input type="checkbox" name="MySQL" value="MySQL" />
+                            MySQL
+                          </label>
+                    </td>
+                </tr>
+                <tr>
+                    <th>보관 도서관</th>
+                     <td colspan="3">
+                        <label>
+                            <input type="radio" name="도서관1" value="도서관1" />
+                            도사관1
+                            <input type="radio" name="도서관2" value="도서관2" />
+                            도서관2
+                            <input type="radio" name="도서관3" value="도서관3" />
+                            도서관3
+                            <input type="radio" name="도서관4" value="도서관4" />
+                            도서관4
+                            <input type="radio" name="도서관5" value="도서관5" />
+                            도서관5
+                          </label>
+                    </td>
+                </tr>
+                <tr>
+                    <th>관련 제목</th>
+                    <td colspan="3">
+                        <select name="components" size="4" multiple>
+                            <option>component_1</option>
+                            <option>component_2</option>
+                            <option>component_3</option>
+                            <option>component_4</option>
+                            <option>component_5</option>
+                            <option>component_6</option>
+                            <option>component_7</option>
+                      </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th>설명</th>
+                    <td colspan="3">
+                    <textarea rows="5" cols="80"></textarea>
+                    </td>
+                </tr>
+
+            </table>
+          
+            <div style="text-align:left; margin-top: 10px;">
+                <input type="button" value="검색하기" />
+                <input type="button" value="검색하기" />
+                <input type="button" value="검색하기" />
+            </div>
+            
+        </form>
+    </body>
